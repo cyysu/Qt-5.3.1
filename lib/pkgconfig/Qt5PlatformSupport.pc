@@ -1,0 +1,14 @@
+prefix=/home/acklinr/apps/Qt-5.3.1
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 PlatformSupport
+Description: Qt PlatformSupport module
+Version: 5.3.1
+Libs: -L${libdir} -lQt5PlatformSupport 
+Libs.private: -L/opt/qnx660/target/qnx6/armle-v7/lib -L/opt/qnx660/target/qnx6/armle-v7/usr/lib -lfreetype -L/home/acklinr/apps/Qt-5.3.1/lib -lQt5Gui -lQt5Core -lm -lGLESv2 -lEGL  
+Cflags: -I${includedir}/QtPlatformSupport -I${includedir}
+Requires: Qt5Core Qt5Gui
+

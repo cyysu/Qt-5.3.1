@@ -1,0 +1,14 @@
+prefix=/home/acklinr/apps/Qt-5.3.1
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Multimedia
+Description: Qt Multimedia module
+Version: 5.3.1
+Libs: -L${libdir} -lQt5Multimedia 
+Libs.private: -L/opt/qnx660/target/qnx6/armle-v7/lib -L/opt/qnx660/target/qnx6/armle-v7/usr/lib -L/home/acklinr/Public/ws/src/qt/Qt5/qtbase/lib -lQt5Gui -lQt5Network -lsocket -lQt5Core -lm -lGLESv2 -lEGL  
+Cflags: -I${includedir}/QtMultimedia -I${includedir}
+Requires: Qt5Core Qt5Network Qt5Gui
+
